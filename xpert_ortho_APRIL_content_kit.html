@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xpert Ortho Care — April 2026 Content Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#08172B;--teal:#0A7B6C;--teal2:#11B09C;--gold:#D4A843;--gold2:#F0C866;--coral:#E5412A;--cream:#F5F2EC;--white:#fff;--g1:#F0EDE8;--g2:#E2DDD6;--g3:#9A9490;--text:#1C2B3A;--text2:#52616F}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text)}
+
+/* ── HERO ── */
+.hero{background:var(--navy);position:relative;overflow:hidden;padding:0}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:180px;background:linear-gradient(to top,rgba(13,122,107,.12),transparent)}
+.hex-bg{position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpolygon points='28,2 54,16 54,44 28,58 2,44 2,16' fill='none' stroke='%2311B09C' stroke-width='1'/%3E%3C/svg%3E");background-size:56px 100px}
+.hero-top-bar{height:4px;background:linear-gradient(90deg,var(--teal),var(--gold),var(--coral))}
+.hero-inner{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:60px 28px 56px}
+.month-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(10,123,108,.2);border:1px solid rgba(10,123,108,.45);border-radius:99px;padding:6px 18px 6px 8px;margin-bottom:26px}
+.month-badge-dot{width:28px;height:28px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+.month-badge-text{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#3DDFC9}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(38px,5.5vw,66px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px}
+.hero h1 span{color:var(--gold2)}
+.hero-desc{font-size:17px;color:rgba(255,255,255,.6);max-width:560px;line-height:1.7;margin-bottom:36px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.hm-chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:7px 16px;font-size:12.5px;color:rgba(255,255,255,.75);font-weight:500}
+.hero-stats{display:flex;flex-wrap:wrap;gap:32px}
+.hs-item{display:flex;flex-direction:column;gap:3px}
+.hs-num{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;color:var(--gold2);line-height:1}
+.hs-label{font-size:11px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em}
+.already-posted{display:inline-flex;align-items:center;gap:8px;margin-top:28px;background:rgba(10,123,108,.15);border:1px solid rgba(10,123,108,.35);border-radius:10px;padding:10px 16px;font-size:13px;color:#3DDFC9;font-weight:500}
+
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:100;background:rgba(8,23,43,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-logo{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--gold2);padding:15px 20px 15px 0;border-right:1px solid rgba(255,255,255,.1);margin-right:8px;white-space:nowrap;flex-shrink:0}
+.nav-link{padding:15px 16px;font-size:12.5px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s;flex-shrink:0}
+.nav-link:hover,.nav-link.active{color:var(--gold2);border-bottom-color:var(--gold)}
+
+/* ── SECTIONS ── */
+.section{padding:72px 28px;max-width:1080px;margin:0 auto}
+.slabel{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,40px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:12px}
+.sdesc{font-size:15px;color:var(--text2);max-width:640px;margin-bottom:48px;line-height:1.7}
+.divider{height:1px;background:var(--g2);max-width:1080px;margin:0 auto}
+
+/* ── STRATEGY BAND ── */
+.strategy-band{background:linear-gradient(135deg,var(--navy),#0D2A1F);border-radius:18px;padding:28px 32px;margin-bottom:48px;position:relative;overflow:hidden}
+.strategy-band::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal2),var(--gold))}
+.sb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px}
+.sb-item{display:flex;flex-direction:column;gap:5px}
+.sb-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.sb-value{font-size:14px;font-weight:600;color:#fff}
+.sb-value.teal{color:var(--teal2)}
+.sb-value.gold{color:var(--gold2)}
+
+/* ── POST CARDS ── */
+.posts-stack{display:flex;flex-direction:column;gap:20px}
+
+.post-card{background:var(--white);border:1px solid var(--g2);border-radius:20px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.post-card:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(0,0,0,.08)}
+
+.pc-head{cursor:pointer;display:flex;align-items:stretch}
+.pc-num{width:58px;min-height:72px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;flex-shrink:0}
+.pc-num-text{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;line-height:1}
+.pc-num-sub{font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+
+.pc-info{flex:1;padding:18px 14px 16px 8px}
+.pc-date-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.pc-date{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g3)}
+.pc-live-badge{font-size:10px;font-weight:700;background:#E1F5EE;color:#085041;border-radius:99px;padding:2px 10px;border:1px solid #9FE1CB}
+.pc-title{font-size:14.5px;font-weight:600;color:var(--navy);line-height:1.4;margin-bottom:8px}
+.pc-tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:10.5px;padding:3px 10px;border-radius:99px;font-weight:600}
+.t-edu{background:#E6F1FB;color:#0C447C}.t-pain{background:#FFF0E0;color:#6B3800}
+.t-trust{background:#E0F5EE;color:#064D38}.t-story{background:#FBE8F2;color:#6B1E42}
+.t-cta{background:#FDEAE6;color:#6B1A0C}.t-video{background:var(--navy);color:var(--gold2)}
+.t-fmt{background:var(--g1);color:var(--text2)}.t-size{background:#F0E8FF;color:#4A1D8A}
+
+.pc-arrow{padding:0 18px;display:flex;align-items:center;color:var(--g3);font-size:11px;transition:transform .25s;flex-shrink:0}
+.pc-arrow.open{transform:rotate(90deg);color:var(--teal)}
+
+/* ── POST BODY ── */
+.pc-body{display:none;border-top:1px solid var(--g2)}
+.pc-body.open{display:block}
+.pc-body-inner{padding:24px 26px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:700px){.pc-body-inner{grid-template-columns:1fr}}
+
+.field{margin-bottom:20px}
+.field:last-child{margin-bottom:0}
+.field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:7px}
+
+/* POSTER MOCKUP */
+.poster-mockup{border-radius:14px;overflow:hidden;border:1px solid var(--g2);margin-bottom:16px}
+.poster-preview{padding:20px;display:flex;flex-direction:column;gap:10px;min-height:200px;position:relative}
+.pm-handle{font-size:10px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.07em;text-align:right}
+.pm-badge{display:inline-block;font-size:11px;font-weight:700;padding:4px 12px;border-radius:99px;align-self:flex-start}
+.pm-headline{font-family:'Playfair Display',serif;font-weight:700;line-height:1.25;flex:1;display:flex;align-items:center}
+.pm-sub{font-size:12px;opacity:.75;line-height:1.5}
+.pm-footer{padding:10px 16px;font-size:11px;font-weight:600;text-align:center;letter-spacing:.04em}
+
+/* POSTER SPEC TABLE */
+.spec-table{width:100%;border-collapse:collapse}
+.spec-table tr{border-bottom:1px solid var(--g2)}
+.spec-table tr:last-child{border-bottom:none}
+.spec-table td{padding:8px 4px;vertical-align:top;font-size:12.5px}
+.spec-table td:first-child{color:var(--g3);font-weight:600;min-width:88px;padding-right:12px;white-space:nowrap}
+.spec-table td:last-child{color:var(--text);line-height:1.55}
+
+/* CONTENT ELEMENTS BOX */
+.elements-box{background:var(--g1);border-radius:12px;padding:14px 16px}
+.el-row{display:flex;gap:8px;margin-bottom:8px;font-size:12.5px;align-items:flex-start}
+.el-row:last-child{margin-bottom:0}
+.el-icon{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0;margin-top:1px}
+.el-text{color:var(--text);line-height:1.55;flex:1}
+
+/* CAPTION */
+.caption-area{background:#EEF4FF;border:1px solid #C5D8F8;border-radius:12px;padding:14px 16px;font-size:12.5px;line-height:1.8;color:var(--text);white-space:pre-wrap;font-family:'Outfit',sans-serif}
+.copy-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;background:var(--g1);border:1px solid var(--g2);color:var(--teal);border-radius:99px;padding:5px 14px;cursor:pointer;margin-top:8px;transition:all .15s}
+.copy-btn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+/* HASHTAGS */
+.ht-cloud{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.ht{font-size:11.5px;padding:4px 11px;border-radius:99px;font-weight:500;cursor:pointer;transition:all .15s}
+.ht-mega{background:#E6F1FB;color:#0C447C;border:1px solid #B5D4F4}
+.ht-mid{background:#E0F5EE;color:#064D38;border:1px solid #9FE1CB}
+.ht-niche{background:#FFF0E0;color:#6B3800;border:1px solid #FFD599}
+.ht-brand{background:var(--navy);color:var(--gold2);border:none}
+.ht:hover{transform:scale(1.05)}
+
+/* HOOK */
+.hook-box{background:#FFFBEC;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:12px 16px;font-size:13px;color:#3D2A00;line-height:1.65;font-style:italic}
+
+/* VIDEO CARD */
+.video-full-card{background:var(--navy);border-radius:20px;padding:32px;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
+.video-full-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold2))}
+.vfc-badge{position:absolute;top:20px;right:24px;background:var(--coral);color:#fff;font-size:10px;font-weight:700;padding:4px 12px;border-radius:99px;letter-spacing:.07em}
+.vfc-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:5px}
+.vfc-sub{font-size:13px;color:rgba(255,255,255,.45);margin-bottom:24px}
+.vfc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px}
+.vfc-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px}
+.vfc-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.vfc-text{font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65}
+.vfc-script{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:18px;font-size:12.5px;color:rgba(255,255,255,.75);line-height:1.75;white-space:pre-wrap;font-family:'Outfit',sans-serif}
+
+@media(max-width:600px){.section{padding:48px 16px}.hero-inner{padding:44px 16px 40px}.pc-body-inner{padding:16px}}
+.footer{background:var(--navy);padding:44px 28px;text-align:center}
+.footer-brand{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold2);margin-bottom:6px}
+.footer-sub{font-size:12px;color:rgba(255,255,255,.3);margin-bottom:18px}
+.footer-chips{display:flex;justify-content:center;flex-wrap:wrap;gap:7px}
+.footer-chip{padding:5px 14px;border-radius:99px;font-size:12px;font-weight:500;border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.45)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-top-bar"></div>
+  <div class="hex-bg"></div>
+  <div class="hero-inner">
+    <div class="month-badge">
+      <div class="month-badge-dot">APR</div>
+      <div class="month-badge-text">Month 1 — Build Awareness</div>
+    </div>
+    <h1>April 2026<br><span>Content Kit</span></h1>
+    <p class="hero-desc">Full image content, poster design specs, captions & hashtags for every post. Starting 16 April — Post 01 already live. 15 posts + 1 Reel this month.</p>
+    <div class="hero-meta">
+      <span class="hm-chip">📅 16 Apr – 30 Apr 2026</span>
+      <span class="hm-chip">📸 Instagram &amp; Facebook</span>
+      <span class="hm-chip">🦴 Dr. Nizam · @xpertorthocare</span>
+      <span class="hm-chip">🎯 Build Awareness &amp; First Followers</span>
+    </div>
+    <div class="hero-stats">
+      <div class="hs-item"><div class="hs-num">15</div><div class="hs-label">Total Posts</div></div>
+      <div class="hs-item"><div class="hs-num">14</div><div class="hs-label">Photo / Graphic</div></div>
+      <div class="hs-item"><div class="hs-num">1</div><div class="hs-label">Video Reel</div></div>
+    </div>
+    <div class="already-posted">✅ Post 01 already live — "Welcome to Xpert Ortho Care" · 15 Apr 2026</div>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">@xpertorthocare</div>
+    <a class="nav-link active" href="#strategy">Strategy</a>
+    <a class="nav-link" href="#posts">All Posts</a>
+    <a class="nav-link" href="#reel">Reel Brief</a><a class="nav-link" href="#hashtag-guide">Hashtag Guide</a>
+  </div>
+</div>
+
+<!-- STRATEGY -->
+<section class="section" id="strategy">
+  <div class="slabel">April Strategy</div>
+  <h2 class="stitle">Month 1 — Build Awareness</h2>
+  <p class="sdesc">This month introduces Dr. Nizam to new audiences. Every post should educate, build trust, and drive profile visits. No hard selling yet — focus on value.</p>
+  <div class="strategy-band">
+    <div class="sb-grid">
+      <div class="sb-item"><div class="sb-label">Theme</div><div class="sb-value teal">Who is Dr. Nizam?</div></div>
+      <div class="sb-item"><div class="sb-label">Post Frequency</div><div class="sb-value">3× per week</div></div>
+      <div class="sb-item"><div class="sb-label">Best Post Days</div><div class="sb-value gold">Wed · Fri · Sat</div></div>
+      <div class="sb-item"><div class="sb-label">Best Post Time</div><div class="sb-value">7:00 PM IST</div></div>
+      <div class="sb-item"><div class="sb-label">Follower Target</div><div class="sb-value teal">300–500</div></div>
+      <div class="sb-item"><div class="sb-label">Consultation Target</div><div class="sb-value gold">2–5 bookings</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- POSTS -->
+<section class="section" id="posts">
+  <div class="slabel">Post-by-Post Breakdown</div>
+  <h2 class="stitle">April Posts — Image Content &amp; Captions</h2>
+  <p class="sdesc">Click any post to expand the full image content brief, poster design spec, ready-to-post caption and all 15 hashtags.</p>
+  <div class="posts-stack" id="posts-container"></div>
+</section>
+
+
+<div class="divider"></div>
+
+<!-- VIDEO REEL SECTION -->
+<section class="section" id="reel">
+  <div class="slabel">Video Content</div>
+  <h2 class="stitle">April Reel — Video 1 of 3</h2>
+  <p class="sdesc">One Reel per month. Shot at the clinic in under an hour. Portrait 1080×1920px. No fancy equipment needed — clear audio and good lighting is everything.</p>
+
+  <div style="background:var(--navy);border-radius:20px;padding:32px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold2))"></div>
+    <div style="position:absolute;top:18px;right:22px;background:var(--coral);color:#fff;font-size:10px;font-weight:700;padding:4px 12px;border-radius:99px;letter-spacing:.07em">APRIL · REEL 1 OF 3</div>
+
+    <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:4px">
+      Dr. Nizam: "One Question I Get Asked Every Day"
+    </div>
+    <div style="font-size:13px;color:rgba(255,255,255,.45);margin-bottom:26px">30–45 seconds · Talking Head · Shot at clinic desk or wall</div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:22px">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px">Duration &amp; Format</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65">30–45 seconds. Portrait 1080×1920px. Talking head — Dr. Nizam speaks directly to camera.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px">Shot Setup</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65">Sit at clinic desk OR stand in front of clinic wall/logo. Phone on tripod at eye level. Natural window light from left. White coat on.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px">Text Overlays</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65">Opening: 'The question every patient asks me 🙏' · Lower third: 'Dr. Nizam · Orthopedic Surgeon · @xpertorthocare' throughout · End card: 'DM me your question →'</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px">Music &amp; Editing</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65">Instagram music: 'calm inspiring'. Volume 20% under voice. CapCut app for auto-captions, lower third, text overlays. Export 1080×1920.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px">Post Date &amp; Time</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65">Wed 30 Apr · 6:30 PM — Reels perform best slightly before static posts. Post to both Instagram Reels and Facebook Reels.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px">Caption &amp; Hashtags</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.8);line-height:1.65">Use: #orthopedicsurgeon #kneesurgery #jointreplacement #xpertorthocare #kneepain #doctoradvice #reelsofinstagram #painfreeliving #healthcare #drnizam #medicaladvice #bonehealth #orthopediccare #kneepainrelief #healthtips</div>
+      </div>
+    </div>
+
+    <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:10px">Full Script</div>
+    <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:18px;font-size:12.5px;color:rgba(255,255,255,.75);line-height:1.8;white-space:pre-wrap;font-family:'Outfit',sans-serif" id="reel-script">[Open mid-sentence — creates instant curiosity and stops the scroll]
+
+"...and that's exactly why I tell every patient the same thing."
+
+[Pause — look directly at camera. Warm, confident smile.]
+
+"The question I get asked most — every single day — is:
+'Doctor, will I be able to walk normally again?'
+
+And my answer is almost always yes.
+
+Here's why.
+
+Modern knee replacement doesn't just remove pain — it restores function.
+Within 24 hours, most patients are already taking their first steps.
+Within 3 months, they're back to doing what they love.
+
+If you've been wondering the same thing — my DMs are open.
+Or book a free consultation through the link in my bio."
+
+[End with a warm, direct smile — no music fade, no looking away]</div>
+    <button class="copy-btn" onclick="copyText(document.getElementById('reel-script').textContent,this)" style="margin-top:12px">📋 Copy Script</button>
+
+    <div style="margin-top:22px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:18px">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:10px">Reel Caption — Ready to Post</div>
+      <div style="font-size:12.5px;color:rgba(255,255,255,.75);line-height:1.8;white-space:pre-wrap;font-family:'Outfit',sans-serif" id="reel-caption">The question that changes everything. 🙏
+
+Every patient who walks into my clinic asks me: "Doctor, will I walk normally again?"
+
+And almost every time — my answer is yes.
+
+Modern orthopedic surgery is not what it was 10 years ago. Faster recovery. Less pain. Life-changing outcomes.
+
+If you have been living with joint pain and wondering if surgery is right for you — drop your question below 👇 I read and reply to every single one.
+
+📍 Consultation slots available — link in bio.
+
+#orthopedicsurgeon #kneesurgery #jointreplacement #xpertorthocare #kneepain #doctoradvice #reelsofinstagram #painfreeliving #healthcare #drnizam #medicaladvice #bonehealth #orthopediccare #kneepainrelief #healthtips</div>
+      <button class="copy-btn" onclick="copyText(document.getElementById('reel-caption').textContent,this)" style="margin-top:10px">📋 Copy Reel Caption + Hashtags</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HASHTAG GUIDE -->
+<section class="section" id="hashtag-guide">
+  <div class="slabel">Resource</div>
+  <h2 class="stitle">April Hashtag Strategy</h2>
+  <p class="sdesc">Use the mix below for each post. 15 hashtags per Instagram post. For Facebook, use only 3–5 of the most relevant ones.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+    <div style="background:var(--white);border:1px solid var(--g2);border-radius:14px;padding:20px">
+      <div style="font-size:11px;font-weight:700;color:#0C447C;text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px">Mega Tags (1M+ reach)</div>
+      <div class="ht-cloud"><span class="ht ht-mega">#kneepain</span><span class="ht ht-mega">#hippain</span><span class="ht ht-mega">#chronicpain</span><span class="ht ht-mega">#jointpain</span><span class="ht ht-mega">#orthopedicsurgeon</span></div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--g2);border-radius:14px;padding:20px">
+      <div style="font-size:11px;font-weight:700;color:#064D38;text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px">Mid Tags (100K–1M)</div>
+      <div class="ht-cloud"><span class="ht ht-mid">#kneereplacement</span><span class="ht ht-mid">#hipreplacement</span><span class="ht ht-mid">#jointreplacement</span><span class="ht ht-mid">#orthopediccare</span><span class="ht ht-mid">#bonehealth</span></div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--g2);border-radius:14px;padding:20px">
+      <div style="font-size:11px;font-weight:700;color:#6B3800;text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px">Niche Tags (Surgery-ready)</div>
+      <div class="ht-cloud"><span class="ht ht-niche">#kneereplacementsurgery</span><span class="ht ht-niche">#totalkneereplacement</span><span class="ht ht-niche">#orthopedicspecialist</span><span class="ht ht-niche">#kneepaintreatment</span></div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--g2);border-radius:14px;padding:20px">
+      <div style="font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px">Branded (Always Use)</div>
+      <div class="ht-cloud"><span class="ht ht-brand">#xpertorthocare</span><span class="ht ht-brand">#drnizam</span><span class="ht ht-brand">#xpertortho</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="footer-brand">Xpert Ortho Care — April 2026</div>
+  <div class="footer-sub">Dr. Nizam · Orthopedic Surgeon · @xpertorthocare</div>
+  <div class="footer-chips">
+    <div class="footer-chip">6 Posts</div>
+    <div class="footer-chip">16–30 April</div>
+    <div class="footer-chip">Build Awareness</div>
+  </div>
+</div>
+
+<script>
+const posts = [
+  {
+    num:"02", date:"Wed 16 Apr · 7:00 PM", type:"pain",
+    title:"5 Signs Your Knee Pain Needs a Surgeon — Not Just a Painkiller",
+    format:"Carousel · 6 Slides", size:"1080 × 1350 px",
+    isVideo:false, isLive:false,
+    hook:"You've tried painkillers. You've tried rest. But the pain keeps coming back — here's what that actually means.",
+    posterBg:"#0B1929", posterFg:"#fff", posterAccent:"#E5412A",
+    posterPreviewLines:["5 SIGNS YOUR", "KNEE PAIN", "NEEDS A SURGEON"],
+    posterBadge:"⚠️ Pain Awareness",
+    posterBadgeBg:"rgba(229,65,42,.2)",posterBadgeFg:"#FF9980",
+    posterFooter:"@xpertorthocare · Dr. Nizam",
+    posterFooterBg:"#E5412A",
+    specs:[
+      ["Slide 1 BG","Deep navy #0B1929 — full bleed dark background"],
+      ["Headline","'5 SIGNS YOUR KNEE PAIN NEEDS A SURGEON' — Bebas Neue, white. Word 'SURGEON' in coral red #E5412A, larger size"],
+      ["Sub-text","'Not Just Another Painkiller' in DM Sans light, grey #9AA3AD below headline"],
+      ["Slide 1 Extras","Red warning triangle ⚠ icon bottom-left · 'Swipe to see all 5 →' in light grey · '@xpertorthocare' top-right corner small white text"],
+      ["Slides 2–6 BG","White #FFFFFF with 8px navy left accent strip"],
+      ["Sign Number","Large coral circle badge (56px) top-left, number inside white Bebas Neue"],
+      ["Sign Title","Navy bold 18px DM Sans, below badge"],
+      ["Sign Desc","2-line grey #52616F description, 13px DM Sans Regular"],
+      ["Progress Bar","Thin navy dots at bottom showing current slide (1–6)"],
+      ["Footer All Slides","Navy strip: '@xpertorthocare · Dr. Nizam · Xpert Ortho Care'"],
+      ["Fonts","Bebas Neue (numbers, slide 1 headline) + DM Sans (body)"],
+      ["Slide 6 CTA","Teal background, white: 'Book a Consultation — Link in Bio' + clinic details"]
+    ],
+    elements:[
+      {icon:"📐",text:"Slide 1: Full navy background with knee X-ray silhouette at 5% opacity watermark behind the text"},
+      {icon:"🔴",text:"Slides 2–6: Each sign gets its own slide — Sign number in coral badge + bold title + 2-line description"},
+      {icon:"📌",text:"5 Signs content: Night pain / Persistent swelling / Knee gives way / 30+ min morning stiffness / Stopped activities"},
+      {icon:"➡️",text:"Swipe prompt on slide 1 to encourage carousel completion"},
+      {icon:"🏥",text:"Clinic logo or handle in every slide footer — brand recognition across all slides"},
+      {icon:"📱",text:"Design at 1080×1350px portrait — crop-safe for both feed and Stories"}
+    ],
+    caption:`Still managing knee pain with tablets? Read this first. 👇
+
+There's a point where painkillers stop helping and start hiding a bigger problem.
+
+Swipe to see the 5 warning signs your knee needs a surgical evaluation — not another prescription.
+
+🔴 Sign 1: Pain that wakes you up at night
+🔴 Sign 2: Swelling that never fully goes away
+🔴 Sign 3: Your knee gives way when walking
+🔴 Sign 4: Morning stiffness lasting 30+ minutes
+🔴 Sign 5: You've stopped doing things you love
+
+If 2 or more of these sound familiar — it's time to talk to a specialist.
+
+📌 Save this post. Share it with someone who needs it.
+💬 Which sign resonated most? Comment below.
+
+📍 Book a consultation → link in bio.`,
+    hashtags:[
+      {t:"#kneepain",c:"mega"},{t:"#kneesurgery",c:"mid"},{t:"#kneepainrelief",c:"mid"},
+      {t:"#kneereplacement",c:"mid"},{t:"#jointreplacement",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#kneepaintreatment",c:"niche"},{t:"#jointpain",c:"mega"},
+      {t:"#bonedoctor",c:"niche"},{t:"#orthopediccare",c:"mid"},{t:"#chronicpain",c:"mega"},
+      {t:"#kneepainproblems",c:"niche"},{t:"#orthospecialist",c:"niche"},{t:"#painrelief",c:"mega"}
+    ]
+  },
+  {
+    num:"03", date:"Fri 18 Apr · 7:00 PM", type:"edu",
+    title:"What Actually Happens During a Knee Replacement? Step by Step",
+    format:"Carousel · 5 Slides", size:"1080 × 1350 px",
+    isVideo:false, isLive:false,
+    hook:"The word 'surgery' sounds scary. Until you know exactly what happens — then it sounds like freedom.",
+    posterBg:"#F0EDE8", posterFg:"#08172B", posterAccent:"#0A7B6C",
+    posterPreviewLines:["Knee Replacement","Step by Step","Guide"],
+    posterBadge:"📘 Education",
+    posterBadgeBg:"rgba(10,123,108,.15)",posterBadgeFg:"#0A7B6C",
+    posterFooter:"@xpertorthocare · Dr. Nizam",
+    posterFooterBg:"#0A7B6C",
+    specs:[
+      ["Background","Light grey #F4F6F8 for all slides — clean, clinical, professional feel"],
+      ["Slide 1 Headline","'A Knee Replacement — Step by Step' in Playfair Display Bold, dark navy, centred top"],
+      ["Slide 1 Sub","'Plain English. No medical jargon.' in DM Sans light, grey, below headline"],
+      ["Steps Layout","Each step: white rounded card with 4px teal left border. Step number in teal circle badge top-left. Step title navy bold 16px. 2-line description grey 13px below"],
+      ["Step Icons","Minimal line-art icon per step: clipboard (assessment), shield (anaesthesia), bone (cartilage removal), implant gear (fitting), walking figure (recovery)"],
+      ["Step Titles","Step 1: Full Assessment & Imaging · Step 2: Anaesthesia · Step 3: Damaged Tissue Removed · Step 4: Implant Fitted · Step 5: Walking Day 1"],
+      ["Progress Bar","Teal dot progress at bottom of each slide"],
+      ["Final Slide","Teal background, white bold: 'Questions? Dr. Nizam Answers All.' + 'Book a Consultation — Link in Bio' button graphic"],
+      ["Footer","Light grey strip: '@xpertorthocare' in navy light text"]
+    ],
+    elements:[
+      {icon:"📊",text:"Slides should read left-to-right as a journey — assessment → surgery → walking. Use a subtle progress line connecting the steps visually"},
+      {icon:"🏥",text:"Step 1 visual: clipboard + X-ray icon. Step 2: anaesthesia mask icon. Step 3: bone with scalpel. Step 4: implant/gear icon. Step 5: walking stick figure"},
+      {icon:"💬",text:"Keep descriptions under 20 words each — designed to be read quickly in a scroll"},
+      {icon:"✅",text:"Final slide: add 3 trust icons — 'Safe ✅ · Proven ✅ · Life-Changing ✅' before the CTA button"},
+      {icon:"🎨",text:"Colour accent on step numbers: teal circle with white number. All other text stays navy/grey — clean and medical"},
+      {icon:"📱",text:"All cards should be legible at mobile thumbnail size — avoid small text below 13px"}
+    ],
+    caption:`"What exactly happens during a knee replacement?" — the question I get every single day. 🔬
+
+Swipe through for a plain-English, step-by-step look at exactly what the surgery involves:
+
+Step 1: Full assessment & X-ray imaging
+Step 2: Anaesthesia (most patients stay awake!)
+Step 3: Damaged cartilage & bone is precisely removed
+Step 4: The implant is fitted — designed to last 20+ years
+Step 5: You're walking within 24–48 hours
+
+Modern knee replacement is precise, safe, and far less daunting than you imagine. The fear is usually bigger than the procedure.
+
+💬 Drop your questions below — I read every comment personally.
+
+📍 Ready to explore your options? Link in bio.`,
+    hashtags:[
+      {t:"#kneereplacement",c:"mid"},{t:"#kneereplacementsurgery",c:"niche"},{t:"#orthopedicsurgery",c:"mid"},
+      {t:"#jointreplacement",c:"mid"},{t:"#totalkneereplacement",c:"niche"},{t:"#kneesurgery",c:"mid"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#orthopediccare",c:"mid"},{t:"#kneepain",c:"mega"},
+      {t:"#bonehealth",c:"mid"},{t:"#orthoexpert",c:"niche"},{t:"#medicaleducation",c:"mid"},
+      {t:"#painfreeliving",c:"mid"},{t:"#surgeryfacts",c:"niche"},{t:"#kneepainrelief",c:"mid"}
+    ]
+  },
+  {
+    num:"04", date:"Sat 19 Apr · 11:00 AM", type:"story",
+    title:"Patient Story — Ravi Walked 5 km Pain-Free After Knee Replacement",
+    format:"Quote Graphic", size:"1080 × 1350 px",
+    isVideo:false, isLive:false,
+    hook:"He waited 2 years in pain because he was scared. What he said after surgery changed how I describe recovery.",
+    posterBg:"#FDF6EE", posterFg:"#08172B", posterAccent:"#C1440E",
+    posterPreviewLines:['"I waited 2 years.', 'I wish I had come', 'sooner."'],
+    posterBadge:"❤️ Patient Story",
+    posterBadgeBg:"rgba(193,68,14,.15)",posterBadgeFg:"#C1440E",
+    posterFooter:"@xpertorthocare · Dr. Nizam",
+    posterFooterBg:"#C1440E",
+    specs:[
+      ["Background","Warm cream #FDF6EE — full bleed, soft and human"],
+      ["Left Accent","12px terracotta strip #C1440E running full left edge of poster"],
+      ["Quote Text","Playfair Display Italic, dark navy, 22–26px. Quote takes up top 55% of poster. Full quote with quotation marks"],
+      ["Attribution","DM Sans Regular 14px, grey #52616F: '— Ravi, 58 · Total Knee Replacement' below quote"],
+      ["Outcome Strip","Bottom 30%: terracotta #C1440E background. White DM Sans Bold: '✅ Walking 5 km Every Morning'"],
+      ["Stars","5 gold star ★★★★★ row above the quote in top section — 16px, gold #D4A843"],
+      ["Patient Photo","Optional: small circular photo frame (80px) top-right corner for patient photo with permission"],
+      ["Handle","'@xpertorthocare' in small terracotta text at very bottom, DM Sans, 11px"],
+      ["Clinic Logo","Small clinic logo or text mark bottom-right corner"]
+    ],
+    elements:[
+      {icon:"💬",text:"The quote should be the dominant visual — large, italic, takes up the most space on the cream section"},
+      {icon:"⭐",text:"5 gold stars above the quote act as a trust signal — keep them subtle, 16px"},
+      {icon:"🔴",text:"Terracotta accent strip on left edge provides brand colour and visual weight without overpowering the quote"},
+      {icon:"📸",text:"If patient photo available (with consent): place in top-right corner in circular frame, 80px diameter"},
+      {icon:"🏆",text:"Outcome strip at bottom is the 'proof point' — '✅ Walking 5 km Every Morning' should be readable at thumbnail size"},
+      {icon:"🎨",text:"Warm, human palette — avoid clinical blues here. This is an emotional connection post, not an information post"}
+    ],
+    caption:`"I waited 2 years before seeing Dr. Nizam. I wish I had come sooner." — Ravi, 58 🙏
+
+Ravi came to us barely able to walk to his car. Stairs were impossible. Family outings were a distant memory.
+
+Three months after his total knee replacement:
+
+✅ Walking 5 km every morning
+✅ No pain medication
+✅ Playing with his grandchildren again
+
+The surgery took under 2 hours.
+The recovery was smoother than he ever expected.
+
+Ravi's story isn't unique — it's what we see every single week at Xpert Ortho Care.
+
+You don't have to keep living with pain. 💙
+
+📍 Book your consultation this week — link in bio.`,
+    hashtags:[
+      {t:"#patientstory",c:"mid"},{t:"#kneereplacement",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#kneepainrelief",c:"mid"},{t:"#successstory",c:"mid"},
+      {t:"#jointreplacement",c:"mid"},{t:"#painfreeliving",c:"mid"},{t:"#patienttestimonial",c:"niche"},
+      {t:"#orthocare",c:"niche"},{t:"#kneesurgery",c:"mid"},{t:"#lifetransformation",c:"mid"},
+      {t:"#bonehealth",c:"mid"},{t:"#surgerysuccess",c:"niche"},{t:"#totalkneereplacement",c:"niche"}
+    ]
+  },
+  {
+    num:"05", date:"Wed 23 Apr · 7:00 PM", type:"edu",
+    title:"Hip Pain vs Knee Pain — How to Tell the Difference",
+    format:"Split Infographic", size:"1080 × 1080 px",
+    isVideo:false, isLive:false,
+    hook:"Did you know? Hip problems often cause knee pain — and vice versa. Here's how to tell them apart.",
+    posterBg:"#FFFFFF", posterFg:"#08172B", posterAccent:"#0A7B6C",
+    posterPreviewLines:["HIP PAIN","vs","KNEE PAIN"],
+    posterBadge:"📘 Education",
+    posterBadgeBg:"rgba(10,123,108,.15)",posterBadgeFg:"#0A7B6C",
+    posterFooter:"@xpertorthocare · Dr. Nizam",
+    posterFooterBg:"#08172B",
+    specs:[
+      ["Background","Pure white #FFFFFF — split vertically down the centre"],
+      ["Left Column BG","Sky blue tint #EBF5FB. Header: 'HIP PAIN' in navy bold Sora, 16px"],
+      ["Right Column BG","Warm amber tint #FEF3E8. Header: 'KNEE PAIN' in navy bold Sora, 16px"],
+      ["Centre Divider","1px vertical line in grey #E2DDD6 separating the two columns"],
+      ["Body Silhouette","Minimal human outline silhouette centred on divider line. Blue dot at hip. Amber dot at knee"],
+      ["Bullet Items","Each side: 4 bullet points. Small circle icon (blue/amber) + 2-line description in DM Sans 12px. Left: groin pain · sitting pain · chair stiffness · daytime limping. Right: kneecap pain · swelling · clicking · can't straighten"],
+      ["Bottom Banner","Full-width navy strip: 'When in doubt — get assessed. @xpertorthocare' in white"],
+      ["Headline","Top centre above columns: 'Hip Pain or Knee Pain? Here's How to Tell.' — Playfair Display 20px navy"],
+      ["Save Prompt","'📌 Save this for reference' in small teal text above footer banner"]
+    ],
+    elements:[
+      {icon:"🔵",text:"Left column (hip pain) uses blue tint — cool, clinical tone matches hip location reference"},
+      {icon:"🟡",text:"Right column (knee pain) uses amber tint — warm, matches the urgency of knee symptoms"},
+      {icon:"🧍",text:"Centre body silhouette is the focal point — coloured joint dots guide the eye to each problem area"},
+      {icon:"📊",text:"Keep bullet points SHORT — max 4 words per line. This is a reference card, not an essay"},
+      {icon:"💾",text:"Design to be SAVED — this is highly shareable content. Make it clean, clear and screenshot-worthy"},
+      {icon:"🏥",text:"Add Dr. Nizam name and 'Book Assessment — link in bio' in very small text at the very bottom"}
+    ],
+    caption:`Hip pain or knee pain? Your body might be confusing you. 🤔
+
+Here's a simple way to tell them apart — because they need very different treatments:
+
+🔵 HIP PAIN typically feels like:
+→ Groin or outer thigh ache
+→ Pain when sitting or climbing stairs
+→ Stiffness when getting out of a chair
+→ Limping that worsens through the day
+
+🟡 KNEE PAIN typically feels like:
+→ Pain directly at or below the kneecap
+→ Swelling around the joint
+→ Clicking or locking when bending
+→ Difficulty fully straightening the leg
+
+The tricky part? Sometimes hip problems CAUSE knee pain — and vice versa. That's why a proper orthopedic assessment matters.
+
+📌 Save this for reference.
+💬 Which one are you experiencing? Comment below.
+
+📍 Get properly assessed — link in bio.`,
+    hashtags:[
+      {t:"#hippain",c:"mega"},{t:"#kneepain",c:"mega"},{t:"#jointpain",c:"mega"},
+      {t:"#orthopedicsurgeon",c:"mega"},{t:"#hipreplacement",c:"mid"},{t:"#kneereplacement",c:"mid"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#bonehealth",c:"mid"},{t:"#orthocare",c:"niche"},
+      {t:"#jointpainrelief",c:"mid"},{t:"#hippainrelief",c:"niche"},{t:"#kneepainrelief",c:"mid"},
+      {t:"#orthopediccare",c:"mid"},{t:"#musculoskeletal",c:"niche"},{t:"#bonedoctor",c:"niche"}
+    ]
+  },
+  {
+    num:"06", date:"Fri 25 Apr · 7:00 PM", type:"edu",
+    title:"3 Biggest Myths About Joint Replacement Surgery — Busted",
+    format:"Carousel · 4 Slides", size:"1080 × 1350 px",
+    isVideo:false, isLive:false,
+    hook:"The reason most people delay joint replacement isn't the pain — it's the myths they've been told.",
+    posterBg:"#1A0505", posterFg:"#fff", posterAccent:"#E5412A",
+    posterPreviewLines:["STOP BELIEVING","THESE 3","SURGERY MYTHS"],
+    posterBadge:"❌ Myth Busting",
+    posterBadgeBg:"rgba(229,65,42,.2)",posterBadgeFg:"#FF9980",
+    posterFooter:"@xpertorthocare · Dr. Nizam",
+    posterFooterBg:"#E5412A",
+    specs:[
+      ["Slide 1 BG","Deep red-black #1A0505 — dramatic, high impact"],
+      ["Slide 1 Headline","'Stop Believing These 3 Surgery Myths' — Bebas Neue, white, very large"],
+      ["Slide 1 Watermark","'MYTHS' text at 6% opacity in red behind the headline — decorative depth element"],
+      ["Slides 2–4 Layout","White background. Top 45%: 'MYTH' section. Bottom 45%: 'FACT' section. Thin grey divider between them"],
+      ["MYTH Section","Red badge pill 'MYTH' in Bebas Neue on red #E5412A. Myth statement in large grey-navy text with strikethrough line through it. Red ✗ icon left of badge"],
+      ["FACT Section","Teal badge pill 'FACT' in Bebas Neue on teal #0A7B6C. Fact statement in navy bold. Green ✓ icon left of badge"],
+      ["Myths Content","Myth 1: Too young · Myth 2: 6–12 month recovery · Myth 3: Better to wait longer"],
+      ["Final Slide (4)","Teal #0A7B6C background, white text: 'Don't Let Myths Make the Decision For You.' + 'Book a Free Assessment' CTA button + '@xpertorthocare'"],
+      ["Fonts","Bebas Neue (MYTH/FACT badges) + DM Sans (body statements)"]
+    ],
+    elements:[
+      {icon:"❌",text:"MYTH section: The strikethrough on the myth text is a key visual — it signals 'this is wrong' instantly to the reader"},
+      {icon:"✅",text:"FACT section: Bold teal creates strong contrast and signals 'truth' — associate the brand with accurate medical information"},
+      {icon:"💥",text:"Slide 1 should feel alarming/urgent — dark background, large type, red accents stop the scroll"},
+      {icon:"📱",text:"Each myth/fact pair should be fully readable at phone screen size without zooming in — keep type above 14px"},
+      {icon:"🔄",text:"The strikethrough effect on myths can be achieved in Canva with a horizontal line element over the text"},
+      {icon:"📌",text:"Add 'SAVE THIS 📌' in small white text at bottom of slide 1 — save rate is the key metric for carousel posts"}
+    ],
+    caption:`The fear of surgery is often bigger than the surgery itself — and usually based on myths. ❌
+
+Swipe to see the 3 most common misconceptions stopping people from getting the relief they deserve:
+
+❌ MYTH 1: "I'm too young for joint replacement."
+✅ FACT: It's based on severity — not age. Patients in their 40s have life-changing results.
+
+❌ MYTH 2: "Recovery takes 6–12 months."
+✅ FACT: Most patients walk within 24–48 hours and return to light activity in weeks.
+
+❌ MYTH 3: "It's better to wait as long as possible."
+✅ FACT: Delaying causes more damage, weaker muscles, and harder recovery.
+
+Don't let myths make the decision for you.
+
+💬 Which myth surprised you most? Tell me below.
+📍 Get the facts from an expert — link in bio.`,
+    hashtags:[
+      {t:"#jointreplacement",c:"mid"},{t:"#kneereplacement",c:"mid"},{t:"#hipreplacement",c:"mid"},
+      {t:"#surgerymyths",c:"niche"},{t:"#mythvsfact",c:"niche"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#kneesurgery",c:"mid"},{t:"#orthopedicfacts",c:"niche"},
+      {t:"#surgeryfacts",c:"niche"},{t:"#kneepain",c:"mega"},{t:"#bonehealth",c:"mid"},
+      {t:"#orthopediccare",c:"mid"},{t:"#jointpainrelief",c:"mid"},{t:"#medicalfacts",c:"mid"}
+    ]
+  },
+  {
+    num:"07", date:"Wed 30 Apr · 7:00 PM", type:"trust",
+    title:"Inside Xpert Ortho Care — A Look at Our Facility",
+    format:"3-Photo Collage", size:"1080 × 1080 px",
+    isVideo:false, isLive:false,
+    hook:"Before you decide on a surgeon, you should know exactly where you'll be treated — and feel at home before you arrive.",
+    posterBg:"#F0EDE8", posterFg:"#08172B", posterAccent:"#0A7B6C",
+    posterPreviewLines:["Xpert","Ortho","Care"],
+    posterBadge:"🏥 Facility Tour",
+    posterBadgeBg:"rgba(10,123,108,.15)",posterBadgeFg:"#0A7B6C",
+    posterFooter:"@xpertorthocare · Dr. Nizam",
+    posterFooterBg:"#0A7B6C",
+    specs:[
+      ["Layout","Grid collage: 1 large photo left (60% width, full height) + 2 stacked photos right (40% width, each 50% height)"],
+      ["Photo 1 (Large Left)","Consultation room — desk, chairs, welcoming atmosphere. Clean, warm lighting. No clutter"],
+      ["Photo 2 (Top Right)","Reception or waiting area — seating, clinic signage visible if possible"],
+      ["Photo 3 (Bottom Right)","Corridor or assessment room — clean lines, professional, calming"],
+      ["Borders","4px teal #0A7B6C lines separating the photo panels — adds visual structure and brand colour"],
+      ["Overlay","Minimal: small '@xpertorthocare' watermark bottom-right in white, 11px DM Sans. No large text overlays — let the space speak"],
+      ["Caption Labels","DO NOT add text labels on the photos themselves — describe the rooms in the post caption instead"],
+      ["Atmosphere","Natural or warm white lighting preferred. Avoid harsh fluorescent. Photos should look welcoming, not clinical-cold"]
+    ],
+    elements:[
+      {icon:"📸",text:"Photo 1 (largest): Consultation room with Dr. Nizam's desk visible — warm, inviting. The most important photo — patients imagine sitting there"},
+      {icon:"🏥",text:"Photo 2: Reception/waiting area with comfortable seating. Shows the clinic is real and professional"},
+      {icon:"🛏️",text:"Photo 3: Recovery suite or assessment room — clean, well-equipped, calming atmosphere"},
+      {icon:"💡",text:"Lighting tip: Shoot during daytime with natural window light if possible. Avoid dark or shadowy corners in frame"},
+      {icon:"🚫",text:"DO NOT include operation theatre photos in this post — they can increase anxiety. Keep it welcoming spaces only"},
+      {icon:"📐",text:"Keep the 4px teal dividers consistent width — this creates a branded, designed look rather than a random photo dump"}
+    ],
+    caption:`We believe transparency builds trust — so here's a look inside Xpert Ortho Care. 🏥
+
+Before you ever sit across from us in a consultation, we want you to feel at home.
+
+What you'll find here:
+✅ State-of-the-art operation theatres
+✅ Dedicated orthopedic recovery suites
+✅ Advanced imaging & diagnostic technology
+✅ A team that treats you like family — not a case number
+
+World-class outcomes start with world-class infrastructure.
+
+📍 Visit us or book a virtual consultation — link in bio.
+💬 Questions about our facility? Ask in the comments.`,
+    hashtags:[
+      {t:"#xpertorthocare",c:"brand"},{t:"#orthopedicclinic",c:"niche"},{t:"#bonehospital",c:"niche"},
+      {t:"#surgeryclinic",c:"niche"},{t:"#orthopediccare",c:"mid"},{t:"#hospitalcare",c:"mid"},
+      {t:"#advancedorthopedics",c:"niche"},{t:"#orthospecialist",c:"niche"},{t:"#jointreplacement",c:"mid"},
+      {t:"#orthopedicsurgeon",c:"mega"},{t:"#surgicalexcellence",c:"niche"},{t:"#patientcare",c:"mid"},
+      {t:"#medicalfacility",c:"niche"},{t:"#bestorthopedicclinic",c:"niche"},{t:"#healthcareindia",c:"mid"}
+    ]
+  }
+,
+  // POST 08
+  {
+    num:"08", date:"Sat 19 Apr · 11:00 AM", type:"story",
+    title:"Patient Story — Ravi Walked 5 km Pain-Free After Knee Replacement",
+    format:"Quote Graphic", size:"1080 × 1350 px", isLive:false,
+    hook:"He waited 2 years in pain because he was scared. What he said after surgery changed how I describe recovery.",
+    posterBg:"#FDF6EE", posterFg:"#08172B", posterAccent:"#C1440E",
+    posterPreviewLines:['"I waited 2 years.','I wish I had come','sooner."'],
+    posterBadge:"❤️ Patient Story",
+    posterBadgeBg:"rgba(193,68,14,.15)", posterBadgeFg:"#C1440E",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#C1440E",
+    specs:[
+      ["Background","Warm cream #FDF6EE — full bleed, soft and human"],
+      ["Left Accent","12px terracotta strip #C1440E running full left edge"],
+      ["Quote Text","Playfair Display Italic, dark navy 22–26px, takes up top 55%"],
+      ["Attribution","DM Sans 14px grey: '— Ravi, 58 · Total Knee Replacement'"],
+      ["Outcome Strip","Bottom 30%: terracotta #C1440E. White bold: '✅ Walking 5 km Every Morning'"],
+      ["Stars","5 gold stars ★★★★★ above quote, 16px gold #D4A843"],
+      ["Patient Photo","Optional: 80px circular frame top-right corner"],
+      ["Handle","'@xpertorthocare' small text at very bottom"]
+    ],
+    elements:[
+      {icon:"💬",text:"Quote dominates — large italic text takes up most of the cream section"},
+      {icon:"⭐",text:"5 gold stars above quote act as an instant trust signal"},
+      {icon:"🔴",text:"Terracotta left accent strip provides brand colour without overpowering"},
+      {icon:"📸",text:"Patient photo (with consent): 80px circular frame top-right"},
+      {icon:"🏆",text:"Outcome strip at bottom is the proof point — readable at thumbnail size"},
+      {icon:"🎨",text:"Warm palette — cream, terracotta, gold. This is an emotional connection post"}
+    ],
+    caption:`"I waited 2 years before seeing Dr. Nizam. I wish I had come sooner." — Ravi, 58 🙏
+
+Ravi came to us barely able to walk to his car. Stairs were impossible. Family outings were a distant memory.
+
+Three months after his total knee replacement:
+
+✅ Walking 5 km every morning
+✅ No pain medication
+✅ Playing with his grandchildren again
+
+The surgery took under 2 hours.
+The recovery was smoother than he ever expected.
+
+Ravi's story isn't unique — it's what we see every single week at Xpert Ortho Care.
+
+You don't have to keep living with pain. 💙
+
+📍 Book your consultation this week — link in bio.`,
+    hashtags:[
+      {t:"#patientstory",c:"mid"},{t:"#kneereplacement",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#kneepainrelief",c:"mid"},{t:"#successstory",c:"mid"},
+      {t:"#jointreplacement",c:"mid"},{t:"#painfreeliving",c:"mid"},{t:"#patienttestimonial",c:"niche"},
+      {t:"#orthocare",c:"niche"},{t:"#kneesurgery",c:"mid"},{t:"#lifetransformation",c:"mid"},
+      {t:"#bonehealth",c:"mid"},{t:"#surgerysuccess",c:"niche"},{t:"#totalkneereplacement",c:"niche"}
+    ]
+  },
+  // POST 09
+  {
+    num:"09", date:"Wed 23 Apr · 7:00 PM", type:"edu",
+    title:"When Should You Stop Managing Pain With Medicines?",
+    format:"Checklist Graphic", size:"1080 × 1350 px", isLive:false,
+    hook:"If painkillers are working, you are not healing — you are delaying. Here is the honest truth.",
+    posterBg:"#FAFAF8", posterFg:"#08172B", posterAccent:"#C9963A",
+    posterPreviewLines:["Stop Masking","the Pain.","Start Fixing It."],
+    posterBadge:"⚠️ Pain Awareness",
+    posterBadgeBg:"rgba(201,150,58,.15)", posterBadgeFg:"#7A5010",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#C9963A",
+    specs:[
+      ["Background","Off-white #FAFAF8 — clean, approachable"],
+      ["Left Accent","10px amber strip #C9963A running full left edge"],
+      ["Headline","'Stop Masking the Pain. Start Fixing It.' DM Serif Display Bold, dark navy"],
+      ["Checkboxes","5 white cards stacked vertically. Checkbox left: unchecked grey / checked amber. Item text navy 14px"],
+      ["5 Items","Daily pain meds · Stomach/kidney concerns · Physio no longer works · Steroid injections 2+/year · Stopped activities"],
+      ["CTA Strip","Full-width amber-teal gradient bottom: 'If you checked 2 or more — it is time to talk.'"],
+      ["Footer","'Free Assessment — link in bio' small teal text. '@xpertorthocare' grey"]
+    ],
+    elements:[
+      {icon:"☑️",text:"Each checkbox must be readable at phone size — min 14px body text"},
+      {icon:"🟡",text:"Amber checked checkbox creates contrast against grey unchecked"},
+      {icon:"📊",text:"5 items stacked — reader mentally checks off their own symptoms"},
+      {icon:"⚡",text:"CTA strip is the conversion moment — amber-teal gradient, bold"},
+      {icon:"📱",text:"Design vertically — ample whitespace between each card"},
+      {icon:"🏥",text:"Clinic logo and '@xpertorthocare' in footer"}
+    ],
+    caption:`Painkillers gave you your life back... for a while. 💊
+
+But if you are taking them daily just to function, something important needs to be said:
+
+Medication manages pain. It does not fix the underlying problem.
+
+It is time to consider a permanent solution if:
+
+☑ You take pain medication every single day
+☑ The medication is causing stomach or kidney concerns
+☑ Physiotherapy no longer gives lasting relief
+☑ You have had steroid injections more than twice in a year
+☑ You have stopped activities you love because of pain
+
+If you checked 2 or more — it is time for an honest conversation with an orthopedic specialist.
+
+No obligation. No pressure. Just clarity.
+
+📍 Book a free assessment — link in bio.`,
+    hashtags:[
+      {t:"#kneepain",c:"mega"},{t:"#hippain",c:"mega"},{t:"#chronicpain",c:"mega"},
+      {t:"#jointreplacement",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},{t:"#xpertorthocare",c:"brand"},
+      {t:"#painmanagement",c:"mid"},{t:"#orthopediccare",c:"mid"},{t:"#kneepainrelief",c:"mid"},
+      {t:"#jointpainrelief",c:"mid"},{t:"#stopthepain",c:"niche"},{t:"#surgerysolution",c:"niche"},
+      {t:"#bonedoctor",c:"niche"},{t:"#orthospecialist",c:"niche"},{t:"#painfreelife",c:"mid"}
+    ]
+  },
+  // POST 10
+  {
+    num:"10", date:"Fri 25 Apr · 7:00 PM", type:"trust",
+    title:"Why Patients Choose Xpert Ortho Care — Credentials and Stats",
+    format:"Stats / Credentials Graphic", size:"1080 × 1080 px", isLive:false,
+    hook:"When you are choosing a surgeon for something this important, credentials are not optional — they are everything.",
+    posterBg:"#08172B", posterFg:"#fff", posterAccent:"#D4A843",
+    posterPreviewLines:["Trusted.","Proven.","Expert."],
+    posterBadge:"🏆 Credibility",
+    posterBadgeBg:"rgba(212,168,67,.2)", posterBadgeFg:"#D4A843",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#D4A843",
+    specs:[
+      ["Background","Deep navy #08172B — full bleed, luxury feel"],
+      ["Headline","'Trusted. Proven. Expert.' DM Sans Bold white top-centre 16px"],
+      ["Stats Grid","4 large stat blocks 2×2 grid. Number Playfair Display 52px gold · label white DM Sans 13px"],
+      ["Dividers","Thin gold lines between stat blocks at 40% opacity"],
+      ["Background Texture","Bone/joint X-ray wireframe at 6% opacity"],
+      ["Stats to Fill","[X] Years Experience · [X] Surgeries · [X]% Satisfaction · Fellowship Trained"],
+      ["Stars","5 gold stars under satisfaction stat"],
+      ["Footer","'@xpertorthocare' small white text bottom-centre"]
+    ],
+    elements:[
+      {icon:"🔢",text:"Large 52px gold numbers on navy create immediate visual impact"},
+      {icon:"✨",text:"Thin gold dividers between stat blocks add luxury feel"},
+      {icon:"🌟",text:"X-ray texture at 6% adds depth without competing with stats"},
+      {icon:"📊",text:"Fill in Dr. Nizam's actual numbers — years, surgeries, satisfaction rating"},
+      {icon:"⭐",text:"5 gold stars under satisfaction rating adds visual proof"},
+      {icon:"🏅",text:"'Fellowship Trained' block is a key differentiator — make it prominent"}
+    ],
+    caption:`Choosing a surgeon is one of the most important decisions you will ever make. 🏆
+
+Here is why hundreds of patients trust Dr. Nizam with their joints — and their lives:
+
+✅ Fellowship-trained orthopedic surgeon
+✅ Advanced minimally invasive surgical techniques
+✅ Dedicated pre-op counselling for every patient
+✅ Personalised post-op recovery protocols
+✅ High-volume experience — knee, hip and spine
+
+When you come to Xpert Ortho Care, you are not a number on a surgery list.
+You are a person who deserves expert care and a pain-free future.
+
+📍 Consultation slots available this week — link in bio.`,
+    hashtags:[
+      {t:"#xpertorthocare",c:"brand"},{t:"#orthopedicsurgeon",c:"mega"},{t:"#jointreplacement",c:"mid"},
+      {t:"#bestorthopedic",c:"niche"},{t:"#fellowshiptrained",c:"niche"},{t:"#kneesurgery",c:"mid"},
+      {t:"#hipreplacement",c:"mid"},{t:"#surgicalexcellence",c:"niche"},{t:"#bonedoctor",c:"niche"},
+      {t:"#orthospecialist",c:"niche"},{t:"#trustedcare",c:"niche"},{t:"#medicalexpert",c:"mid"},
+      {t:"#orthopediccare",c:"mid"},{t:"#surgeonlife",c:"mid"},{t:"#patientfirst",c:"niche"}
+    ]
+  },
+  // POST 11
+  {
+    num:"11", date:"Sat 26 Apr · 11:00 AM", type:"edu",
+    title:"Knee Replacement Recovery — Honest Week-by-Week Timeline",
+    format:"Vertical Timeline Infographic", size:"1080 × 1350 px", isLive:false,
+    hook:"The number one thing holding people back from knee replacement? Fear of the recovery. Let us make it real.",
+    posterBg:"#FFFFFF", posterFg:"#08172B", posterAccent:"#0A7B6C",
+    posterPreviewLines:["Recovery","Timeline","Week by Week"],
+    posterBadge:"📘 Education",
+    posterBadgeBg:"rgba(10,123,108,.12)", posterBadgeFg:"#0A7B6C",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#0A7B6C",
+    specs:[
+      ["Background","White — clean, medical reference style"],
+      ["Timeline Spine","2px navy vertical line running left-centre"],
+      ["Nodes","Teal filled circles (18px) on spine — one per milestone"],
+      ["Cards","White cards right of each node. Title navy bold 14px. Description grey 12px"],
+      ["7 Milestones","Day 1–2 · Week 1 · Week 2–4 · Month 1–2 · Month 3 · Month 6 · Month 12"],
+      ["Icons","Bed · walking stick · stairs · car · running · sport · trophy"],
+      ["Final Card","Teal background: 'Month 12: Full Recovery. Active, Pain-Free Life.'"],
+      ["Footer","Navy strip: '@xpertorthocare · Book a Consultation — Link in Bio'"]
+    ],
+    elements:[
+      {icon:"📅",text:"Timeline reads top-to-bottom as a patient journey — Day 1 at top, Month 12 at bottom"},
+      {icon:"🎯",text:"Month 12 final card in teal — the outcome patients want. Make it most prominent"},
+      {icon:"🚶",text:"Icons per milestone: hospital bed → walking stick → stairs → car → jog → sport → trophy"},
+      {icon:"💾",text:"Save-worthy reference post — 'Save this 📌' text in small teal below timeline"},
+      {icon:"📱",text:"Ensure each milestone card is readable at phone size — no text below 12px"},
+      {icon:"🏥",text:"Footer CTA: 'Ask about YOUR specific timeline — Book via link in bio'"}
+    ],
+    caption:`"How long is the recovery?" — the question I answer every single day. 📅
+
+Here is the most honest knee replacement recovery timeline I can give you:
+
+🗓 Day 1–2: Sitting up, ankle exercises, first steps with support
+🗓 Week 1: Home from hospital. Gentle walking. Pain well-controlled.
+🗓 Week 2–4: Stairs. Reducing pain meds. Physiotherapy begins.
+🗓 Month 1–2: Walking longer distances. Driving resumes.
+🗓 Month 3: Light work and social activities return.
+🗓 Month 6: Feeling like a new joint — truly.
+🗓 Month 12: Full recovery. Active, pain-free life.
+
+Every patient is different — but this is realistic for the vast majority.
+
+💬 Save this and share with someone considering surgery.
+
+📍 Ask about YOUR specific timeline — link in bio.`,
+    hashtags:[
+      {t:"#kneereplacement",c:"mid"},{t:"#kneereplacementrecovery",c:"niche"},{t:"#kneesurgery",c:"mid"},
+      {t:"#jointreplacement",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},{t:"#xpertorthocare",c:"brand"},
+      {t:"#recoveryjourney",c:"mid"},{t:"#kneepain",c:"mega"},{t:"#orthopedicrecovery",c:"niche"},
+      {t:"#totalkneereplacement",c:"niche"},{t:"#postop",c:"niche"},{t:"#physicaltherapy",c:"mid"},
+      {t:"#painfreeliving",c:"mid"},{t:"#bonehealth",c:"mid"},{t:"#surgerytimeline",c:"niche"}
+    ]
+  },
+  // POST 12
+  {
+    num:"12", date:"Wed 28 Apr · 7:00 PM", type:"edu",
+    title:"5 Exercises — Only Safe AFTER Consulting Your Orthopedic Surgeon",
+    format:"5-Panel Grid Graphic", size:"1080 × 1080 px", isLive:false,
+    hook:"Some of the most popular joint exercises can destroy a damaged knee. Here is what to know before your next workout.",
+    posterBg:"#FFFFFF", posterFg:"#08172B", posterAccent:"#E5412A",
+    posterPreviewLines:["Move Smarter","Not","Harder."],
+    posterBadge:"📘 Education",
+    posterBadgeBg:"rgba(10,123,108,.12)", posterBadgeFg:"#0A7B6C",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#08172B",
+    specs:[
+      ["Top Banner","Full-width navy strip: 'Move Smarter — Not Harder.' white DM Sans Bold"],
+      ["Grid","5 panels: 2 top + 2 middle + 1 bottom-centre. Thin grey borders between"],
+      ["Each Panel","Minimal exercise illustration · Name navy bold 13px · 1-line caution grey 12px · Red 'CONSULT FIRST' badge"],
+      ["5 Exercises","1) Deep Squats 2) High-Impact Running 3) Heavy Leg Press 4) Jump Training/HIIT 5) Cycling (wrong saddle)"],
+      ["Badge Style","'CONSULT FIRST' pill: red #E5412A background, white bold 10px"],
+      ["Save Prompt","'SAVE THIS 📌' in small teal text below grid"],
+      ["Footer","Navy strip: '@xpertorthocare · Free Movement Assessment — DM Us'"]
+    ],
+    elements:[
+      {icon:"📐",text:"5 panels equal-sized in a clean grid — 2 top, 2 middle, 1 bottom-centre"},
+      {icon:"🏃",text:"Minimal line-art illustrations per exercise — squat pose, run, leg press, jump, cycling"},
+      {icon:"🔴",text:"Red 'CONSULT FIRST' badge on every panel — consistent brand message"},
+      {icon:"📱",text:"All text legible at phone thumbnail. Minimum 12px"},
+      {icon:"💾",text:"Save-worthy safety content — 'SAVE THIS 📌' is essential"},
+      {icon:"🏥",text:"Footer CTA drives DM conversations: 'Free Movement Assessment'"}
+    ],
+    caption:`Not all exercises are created equal — especially with joint problems. ⚠️
+
+Here are 5 movements that are ONLY safe once your ortho specialist has cleared you:
+
+1️⃣ Deep squats — extreme knee angle worsens cartilage damage
+2️⃣ High-impact running — compresses an already painful joint
+3️⃣ Heavy leg press — shear forces on unstable joints
+4️⃣ Jump training / HIIT — shock-loading damaged cartilage
+5️⃣ Cycling with wrong saddle height — uneven joint stress
+
+Done right, after proper assessment? These exercises rebuild strength beautifully.
+Done wrong, on a damaged joint? They accelerate the damage.
+
+🔖 Save this before your next gym session.
+💬 DM us for a personalised movement assessment.
+
+📍 Consultations — link in bio.`,
+    hashtags:[
+      {t:"#kneepainexercises",c:"niche"},{t:"#jointpain",c:"mega"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#exercisesafety",c:"niche"},{t:"#kneehealth",c:"mid"},
+      {t:"#orthopedicadvice",c:"niche"},{t:"#bonehealth",c:"mid"},{t:"#jointhealth",c:"mid"},
+      {t:"#physicaltherapy",c:"mid"},{t:"#kneepainrelief",c:"mid"},{t:"#exerciseforpain",c:"niche"},
+      {t:"#orthocare",c:"niche"},{t:"#safemovement",c:"niche"},{t:"#kneestrengthening",c:"niche"}
+    ]
+  },
+  // POST 13
+  {
+    num:"13", date:"Fri 30 Apr · 7:00 PM", type:"pain",
+    title:"Signs Your Hip Pain Has Gone Beyond Physiotherapy",
+    format:"Carousel · 6 Slides", size:"1080 × 1350 px", isLive:false,
+    hook:"Physiotherapy is wonderful — for the right problem. But some hip conditions have a point of no return if left too long.",
+    posterBg:"#C1440E", posterFg:"#fff", posterAccent:"#FFB085",
+    posterPreviewLines:["Your Hip Is","Telling You","Something."],
+    posterBadge:"⚠️ Pain Awareness",
+    posterBadgeBg:"rgba(255,255,255,.15)", posterBadgeFg:"#FFE0CC",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#8B2A00",
+    specs:[
+      ["Slide 1","Terracotta-orange #C1440E full bleed. 'Your Hip Is Telling You Something.' Playfair Display white"],
+      ["Slides 2–5","White background, terracotta top accent strip 14px"],
+      ["Sign Badge","Large terracotta circle badge top-left with white sign number"],
+      ["Title","Navy DM Sans Bold 17px per sign"],
+      ["Description","2-line grey DM Sans 13px"],
+      ["5 Signs","Groin-thigh radiation · Cant put on socks · Wakes at night · Permanent limp · Bone-on-bone X-ray"],
+      ["Slide 6","Navy background, teal button: 'Book Assessment — Link in Bio'"],
+      ["Progress","Dot bar at bottom of each slide"]
+    ],
+    elements:[
+      {icon:"🟠",text:"Slide 1 terracotta background creates urgency — high-stakes pain awareness"},
+      {icon:"🦴",text:"Small hip joint icon (line-art) on each slide — consistent visual anchor"},
+      {icon:"➡️",text:"Include subtle 'Swipe →' prompt on slides 1–5"},
+      {icon:"💊",text:"Acknowledge physio positively before presenting surgery as next step"},
+      {icon:"📱",text:"Progress dot bar at slide bottom helps readers track carousel position"},
+      {icon:"🏥",text:"Final CTA slide: navy background with teal button for strong contrast"}
+    ],
+    caption:`"Just do more physio" — advice that helps some hips and harms others. 🚨
+
+Physiotherapy is powerful. But once hip joint damage reaches a certain stage, exercise alone cannot repair the structural problem.
+
+Swipe to see 5 signs your hip pain may have moved past what physio can fix:
+
+🔴 Groin pain that radiates to the thigh when walking
+🔴 Hip so stiff you cannot put on your own socks
+🔴 Pain keeping you awake despite medication
+🔴 Limping that is becoming permanent and worsening
+🔴 X-ray showing bone-on-bone contact
+
+If you recognise any of these — it does not mean the worst. It means it is time to know exactly where you stand.
+
+📌 Save and share with someone who keeps doing physio.
+
+📍 Get assessed — link in bio.`,
+    hashtags:[
+      {t:"#hippain",c:"mega"},{t:"#hipreplacement",c:"mid"},{t:"#hipsurgery",c:"mid"},
+      {t:"#hipjointpain",c:"niche"},{t:"#orthopedicsurgeon",c:"mega"},{t:"#xpertorthocare",c:"brand"},
+      {t:"#hiparthritis",c:"niche"},{t:"#jointpain",c:"mega"},{t:"#orthopediccare",c:"mid"},
+      {t:"#hipstiffness",c:"niche"},{t:"#hipreplacementsurgery",c:"niche"},{t:"#bonehealth",c:"mid"},
+      {t:"#orthospecialist",c:"niche"},{t:"#jointreplacement",c:"mid"},{t:"#painfreeliving",c:"mid"}
+    ]
+  },
+  // POST 14
+  {
+    num:"14", date:"Sat 30 Apr · 11:00 AM", type:"edu",
+    title:"Minimally Invasive Surgery — What It Means for Your Recovery",
+    format:"Side-by-Side Comparison Graphic", size:"1080 × 1080 px", isLive:false,
+    hook:"Orthopedic surgery today looks nothing like what your parents had. The difference will surprise you.",
+    posterBg:"#FFFFFF", posterFg:"#08172B", posterAccent:"#0A7B6C",
+    posterPreviewLines:["Old Surgery","vs","Modern Surgery"],
+    posterBadge:"📘 Education",
+    posterBadgeBg:"rgba(10,123,108,.12)", posterBadgeFg:"#0A7B6C",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#08172B",
+    specs:[
+      ["Background","White split into two columns by 1px grey divider"],
+      ["Left Header","'TRADITIONAL' on grey #E8ECF0 strip, grey DM Sans Bold"],
+      ["Right Header","'MINIMALLY INVASIVE' on teal #0A7B6C strip, white DM Sans Bold"],
+      ["Rows","5 rows: Incision · Blood Loss · Hospital Stay · Recovery · Walking. Left: grey + red ✗ Right: teal + green ✓"],
+      ["Values","Left: 20–30cm/Higher/5–7 days/6–12 months/Weeks later. Right: 8–12cm/Much Less/2–3 days/Weeks/Day after"],
+      ["Bottom Banner","Navy: 'Same outcome. Fraction of the disruption.'"],
+      ["Footer","'@xpertorthocare · Ask Dr. Nizam if you are a candidate'"]
+    ],
+    elements:[
+      {icon:"⚖️",text:"Two-column layout is instantly readable — left bad, right good"},
+      {icon:"❌",text:"Red ✗ icons on left column signal problems without aggressive language"},
+      {icon:"✅",text:"Green ✓ icons on right signal solutions — brand associated with modern technique"},
+      {icon:"🏷️",text:"Grey (old) vs teal (modern) column headers signal tone through colour"},
+      {icon:"📊",text:"Max 3 words per row cell — quick-scan graphic, not a data table"},
+      {icon:"💾",text:"'Save this 📌' in teal below comparison — reference content before deciding"}
+    ],
+    caption:`Orthopedic surgery has transformed completely over the last decade. 🔬
+
+If you are imagining long incisions, weeks in hospital and months of pain — that is not modern joint replacement.
+
+Here is the real comparison:
+
+🔘 TRADITIONAL:
+→ 20–30 cm incision
+→ Higher blood loss
+→ 5–7 day hospital stay
+→ 6–12 month recovery
+
+🟢 MINIMALLY INVASIVE (what we do):
+→ 8–12 cm incision
+→ Significantly less blood loss
+→ 2–3 day hospital stay
+→ Walking in 24–48 hours
+→ Back to life in weeks
+
+Same outcome. Fraction of the disruption.
+
+💬 Were you surprised by this? Tell us below.
+
+📍 Find out if you are a candidate — link in bio.`,
+    hashtags:[
+      {t:"#minimallynvasivesurgery",c:"niche"},{t:"#modernorthopedics",c:"niche"},{t:"#kneesurgery",c:"mid"},
+      {t:"#jointreplacement",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},{t:"#xpertorthocare",c:"brand"},
+      {t:"#advancedsurgery",c:"niche"},{t:"#kneereplacement",c:"mid"},{t:"#hipreplacement",c:"mid"},
+      {t:"#fasterrecovery",c:"niche"},{t:"#surgeryfacts",c:"niche"},{t:"#orthopediccare",c:"mid"},
+      {t:"#bonehealth",c:"mid"},{t:"#medicalinnovation",c:"mid"},{t:"#painfreeliving",c:"mid"}
+    ]
+  },
+  // POST 15
+  {
+    num:"15", date:"Wed 30 Apr · 7:00 PM", type:"story",
+    title:"Patient Story — Suresh Got His Life Back at 65",
+    format:"Quote Card + Portrait", size:"1080 × 1350 px", isLive:false,
+    hook:"At 65, he thought his active life was over. He almost did not call us because of his age.",
+    posterBg:"#FDF6EE", posterFg:"#08172B", posterAccent:"#8B3A2A",
+    posterPreviewLines:['"At 65,','I thought I was','too old."'],
+    posterBadge:"❤️ Patient Story",
+    posterBadgeBg:"rgba(139,58,42,.15)", posterBadgeFg:"#8B3A2A",
+    posterFooter:"@xpertorthocare · Dr. Nizam", posterFooterBg:"#8B3A2A",
+    specs:[
+      ["Background","Warm ivory #FDF6EE top 65% of poster"],
+      ["Quote","Playfair Display Italic dark navy 22px. Full quote with quotation marks"],
+      ["Attribution","DM Sans 14px grey: '— Suresh, 65 · Total Knee Replacement'"],
+      ["Stars","5 gold stars above quote 16px"],
+      ["Patient Photo","Optional 80px circular frame top-right"],
+      ["Outcome","Bottom 35%: deep terracotta #8B3A2A. White bold: '🏏 Now plays cricket with his grandchildren'"],
+      ["Sub","White DM Sans 13px: '3 Months Post-Op · Zero Pain Medication'"],
+      ["Handle","'@xpertorthocare' small white text at very bottom"]
+    ],
+    elements:[
+      {icon:"💬",text:"Quote dominates the ivory section — must be 22px+ for visual impact"},
+      {icon:"⭐",text:"5 gold stars above quote establish trust before the patient speaks"},
+      {icon:"🏏",text:"The cricket detail makes the story specific and memorable"},
+      {icon:"🟤",text:"Terracotta outcome section is the proof point — bold white text, reads at thumbnail"},
+      {icon:"📸",text:"Patient photo (with written consent): circular frame, does not overlap quote"},
+      {icon:"🎨",text:"Warm palette throughout — cream, terracotta, gold. Human connection post"}
+    ],
+    caption:`"At 65, I thought I was too old for surgery. Dr. Nizam proved me wrong." — Suresh 👴❤️
+
+Suresh came to us convinced surgery was not for someone his age. He had been told to just live with it.
+
+He had been taking pills for 4 years.
+He had stopped visiting his grandchildren because stairs were impossible.
+
+After a thorough assessment, he was a perfect candidate for total knee replacement.
+
+Today? He plays cricket with his grandchildren on weekends. 🏏
+
+Age is NOT a barrier to a pain-free life. The right assessment tells you what is truly possible.
+
+💬 Are you or someone you love hesitating because of age? Ask us in the comments.
+
+📍 Consultations available — link in bio.`,
+    hashtags:[
+      {t:"#kneereplacement",c:"mid"},{t:"#patientstory",c:"mid"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#xpertorthocare",c:"brand"},{t:"#seniorhealth",c:"mid"},{t:"#activeaging",c:"mid"},
+      {t:"#jointpain",c:"mega"},{t:"#kneesurgery",c:"mid"},{t:"#elderlycare",c:"mid"},
+      {t:"#painfreeliving",c:"mid"},{t:"#jointreplacement",c:"mid"},{t:"#successstory",c:"mid"},
+      {t:"#totalkneereplacement",c:"niche"},{t:"#orthopediccare",c:"mid"},{t:"#ageisnotabarrier",c:"niche"}
+    ]
+  },
+  // POST 16 — CTA
+  {
+    num:"16", date:"Sat 30 Apr · 11:00 AM", type:"cta",
+    title:"Book Your Consultation — Limited Slots This Month",
+    format:"Bold CTA Graphic", size:"1080 × 1350 px", isLive:false,
+    hook:"You have been scrolling. You have been thinking. You have been managing. Time to stop managing and start fixing.",
+    posterBg:"#08172B", posterFg:"#fff", posterAccent:"#E5412A",
+    posterPreviewLines:["STOP","LIVING","WITH PAIN."],
+    posterBadge:"🎯 Book Now",
+    posterBadgeBg:"rgba(229,65,42,.2)", posterBadgeFg:"#FF9980",
+    posterFooter:"@xpertorthocare — Book Now", posterFooterBg:"#E5412A",
+    specs:[
+      ["Background","Deep navy #08172B — full bleed, dramatic"],
+      ["Main Headline","'STOP LIVING WITH PAIN.' Bebas Neue full-width white. 3 lines: STOP / LIVING WITH / PAIN."],
+      ["Body","3 white bullet lines DM Sans 16px: '🦴 Knee Pain · 🦴 Hip Pain · 🦴 Spine Issues'"],
+      ["Urgency Badge","'LIMITED SLOTS THIS MONTH' gold pill badge top-right corner"],
+      ["CTA Strip","Bottom 28%: coral red #E5412A. 'Book Your Consultation' white bold 18px + phone placeholder"],
+      ["Texture","Subtle bone/joint wireframe at 5% opacity in navy background"],
+      ["Photo","Optional: Dr. Nizam right-side photo 40% width — white coat, direct eye contact"]
+    ],
+    elements:[
+      {icon:"💥",text:"3-word stacked headline in Bebas Neue creates maximum impact — reader feels personally addressed"},
+      {icon:"🔴",text:"Coral CTA strip at bottom is the most visually bright element — the action zone"},
+      {icon:"🏅",text:"Gold 'LIMITED SLOTS' badge creates urgency without aggressive pressure"},
+      {icon:"📞",text:"Phone number in CTA strip must be readable — minimum 16px white on red"},
+      {icon:"📸",text:"Dr. Nizam photo (right side, white coat) adds authority and human connection"},
+      {icon:"📱",text:"CTA strip visible even if top of poster is cropped on some phone screens"}
+    ],
+    caption:`You have been living with this pain long enough. 🛑
+
+This month, Dr. Nizam has limited new patient consultation slots available.
+
+If you or someone you love is dealing with:
+🦴 Knee pain that will not go away
+🦴 Hip stiffness affecting daily life
+🦴 Joint pain that medication no longer controls
+
+...this is your sign.
+
+A consultation with Dr. Nizam includes:
+✅ Full assessment of your joint condition
+✅ Review of your imaging and history
+✅ Clear, honest advice on your best options
+✅ No pressure. No rush. Just clarity.
+
+Slots fill fast.
+
+📞 Call us directly
+📩 DM this account
+🔗 Book online — link in bio
+
+Your pain-free life is one consultation away.`,
+    hashtags:[
+      {t:"#xpertorthocare",c:"brand"},{t:"#booknow",c:"niche"},{t:"#orthopedicsurgeon",c:"mega"},
+      {t:"#jointreplacement",c:"mid"},{t:"#kneepain",c:"mega"},{t:"#hippain",c:"mega"},
+      {t:"#orthopediccare",c:"mid"},{t:"#consultationavailable",c:"niche"},{t:"#kneesurgery",c:"mid"},
+      {t:"#hipreplacement",c:"mid"},{t:"#jointpainrelief",c:"mid"},{t:"#painfreeliving",c:"mid"},
+      {t:"#orthospecialist",c:"niche"},{t:"#bookaconsultation",c:"niche"},{t:"#stoplivingwithpain",c:"niche"}
+    ]
+  }
+
+];
+
+// ── RENDER ──
+const TC = {edu:"t-edu",pain:"t-pain",trust:"t-trust",story:"t-story",cta:"t-cta",video:"t-video"};
+const TL = {edu:"Education",pain:"Pain Awareness",trust:"Trust & Credibility",story:"Patient Story",cta:"Surgery CTA",video:"Video Reel"};
+const HC = {mega:"ht-mega",mid:"ht-mid",niche:"ht-niche",brand:"ht-brand"};
+let openPost = null;
+
+function toggle(num){
+  openPost = openPost===num ? null : num;
+  document.querySelectorAll('.pc-body').forEach(b=>b.classList.remove('open'));
+  document.querySelectorAll('.pc-arrow').forEach(a=>a.classList.remove('open'));
+  if(openPost){
+    document.getElementById('body-'+num).classList.add('open');
+    document.getElementById('arrow-'+num).classList.add('open');
+  }
+}
+
+function copyText(txt, btn){
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✓ Copied!';
+    btn.style.cssText='background:var(--teal);color:#fff;border-color:var(--teal)';
+    setTimeout(()=>{btn.textContent=o;btn.style.cssText=''},2000);
+  });
+}
+
+function buildPoster(p){
+  const lines = p.posterPreviewLines.map((l,i)=>`<div class="pm-headline" style="font-size:${i===0?'22px':'18px'};color:${i===1&&p.posterAccent?p.posterAccent:p.posterFg};margin:0;display:block;text-align:center">${l}</div>`).join('');
+  return `<div class="poster-mockup">
+    <div class="poster-preview" style="background:${p.posterBg};padding:18px 16px">
+      <div class="pm-handle" style="color:rgba(255,255,255,.45)">@xpertorthocare</div>
+      <span class="pm-badge" style="background:${p.posterBadgeBg};color:${p.posterBadgeFg}">${p.posterBadge}</span>
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:12px 0">${lines}</div>
+      <div style="font-size:11px;color:${p.posterFg};opacity:.5;text-align:center">${p.size}</div>
+    </div>
+    <div class="pm-footer" style="background:${p.posterFooterBg};color:#fff">${p.posterFooter}</div>
+  </div>`;
+}
+
+function buildCard(p){
+  const hashStr = p.hashtags.map(h=>h.t).join(' ');
+  const hts = p.hashtags.map(h=>`<span class="ht ${HC[h.c]||'ht-mid'}" onclick="copyText('${h.t}',this)">${h.t}</span>`).join('');
+  const specs = p.specs.map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+  const els = p.elements.map(e=>`<div class="el-row"><div class="el-icon" style="background:${p.posterBg==='#FFFFFF'?'#E0F5EE':'rgba(255,255,255,.1)'};color:${p.posterBg==='#FFFFFF'?'#064D38':'#fff'}">${e.icon}</div><div class="el-text">${e.text}</div></div>`).join('');
+
+  return `<div class="post-card" id="card-${p.num}">
+    <div class="pc-head" onclick="toggle('${p.num}')">
+      <div class="pc-num" style="background:${p.posterBg};color:${p.posterFg==='#fff'?p.posterAccent||'#fff':p.posterAccent||p.posterFg}">
+        <div class="pc-num-text">${p.num}</div>
+        <div class="pc-num-sub">POST</div>
+      </div>
+      <div class="pc-info">
+        <div class="pc-date-row">
+          <span class="pc-date">${p.date}</span>
+          ${p.isLive?'<span class="pc-live-badge">✅ Live</span>':''}
+        </div>
+        <div class="pc-title">${p.title}</div>
+        <div class="pc-tags">
+          <span class="tag ${TC[p.type]}">${TL[p.type]}</span>
+          <span class="tag t-fmt">${p.format}</span>
+          <span class="tag t-size">${p.size}</span>
+        </div>
+      </div>
+      <div class="pc-arrow" id="arrow-${p.num}">▶</div>
+    </div>
+    <div class="pc-body" id="body-${p.num}">
+      <div class="pc-body-inner">
+        <div>
+          <div class="field">
+            <div class="field-label">Hook — Opening Line</div>
+            <div class="hook-box">${p.hook}</div>
+          </div>
+          <div class="field">
+            <div class="field-label">Poster Preview &amp; Design Spec</div>
+            ${buildPoster(p)}
+            <table class="spec-table"><tbody>${specs}</tbody></table>
+          </div>
+          <div class="field">
+            <div class="field-label">Content Elements to Include</div>
+            <div class="elements-box">${els}</div>
+          </div>
+        </div>
+        <div>
+          <div class="field">
+            <div class="field-label">Caption — Ready to Post</div>
+            <div class="caption-area">${p.caption.replace(/\n/g,'<br>')}</div>
+            <button class="copy-btn" onclick="copyText(\`${p.caption.replace(/`/g,"'")}\`,this)">📋 Copy Caption</button>
+          </div>
+          <div class="field">
+            <div class="field-label">15 Hashtags — Click to Copy Individual / Copy All</div>
+            <div class="ht-cloud">${hts}</div>
+            <button class="copy-btn" onclick="copyText('${hashStr}',this)" style="margin-top:8px">📋 Copy All 15 Hashtags</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+document.getElementById('posts-container').innerHTML = posts.map(buildCard).join('');
+
+// Nav active state
+window.addEventListener('scroll',()=>{
+  const ids=['strategy','posts','reel','hashtag-guide'];
+  let cur='';
+  ids.forEach(id=>{const el=document.getElementById(id);if(el&&scrollY>=el.offsetTop-80)cur=id});
+  document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+cur));
+});
+</script>
+</body>
+</html>
